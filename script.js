@@ -1,3 +1,7 @@
+// บังคับให้เปิดด้วยเบราว์เซอร์ภายนอกแอปแชทอัตโนมัติ
+if (navigator.userAgent.includes('Line') || navigator.userAgent.includes('FBAN') || navigator.userAgent.includes('FBAV')) {
+    window.location.href = window.location.href + (window.location.href.includes('?') ? '&' : '?') + 'openExternalBrowser=1';
+}
 // Scroll-reveal
 const revealEls = document.querySelectorAll('.reveal');
 const revealObserver = new IntersectionObserver((entries) => {
