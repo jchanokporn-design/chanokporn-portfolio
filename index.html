@@ -235,11 +235,121 @@
       </a>
       <p class="concept-shot__hint">Tap image to view full size</p>
 
-     <h4 class="flow__title flow__title--spaced">System Logic, Design Decisions &amp; AI Opportunities</h4>
-      <a class="concept-shot" href="images/pictures/systemlogic-front-end-to-backend-design-decisions.png" target="_blank" rel="noopener">
-        <img src="images/pictures/systemlogic-front-end-to-backend-design-decisions.png" alt="Infographic: system logic flow from front-end to back-end, design decisions, AI and future opportunities, and executive insight summary" loading="lazy">
-      </a>
-      <p class="concept-shot__hint">Tap image to view full size</p>
+<h4 class="flow__title flow__title--spaced">System Logic — Front-End to Back-End</h4>
+      <div class="flowchart">
+        <div class="flowchart__steps">
+          <div class="flowchart__step">
+            <div class="flowchart__icon">👤</div>
+            <p class="flowchart__label">Customer<br><span>Scan QR</span></p>
+          </div>
+          <div class="flowchart__arrow">→</div>
+          <div class="flowchart__step">
+            <div class="flowchart__icon">👥</div>
+            <p class="flowchart__label">Identify<br><span>Member / Guest</span></p>
+          </div>
+          <div class="flowchart__arrow">→</div>
+          <div class="flowchart__step">
+            <div class="flowchart__icon">🔗</div>
+            <p class="flowchart__label">Check Member<br><span>API</span></p>
+          </div>
+          <div class="flowchart__arrow">→</div>
+          <div class="flowchart__step">
+            <div class="flowchart__icon">📋</div>
+            <p class="flowchart__label">Order Type<br><span>Dine-in / Takeaway</span></p>
+          </div>
+          <div class="flowchart__arrow">→</div>
+          <div class="flowchart__step">
+            <div class="flowchart__icon">📝</div>
+            <p class="flowchart__label">Menu & Promo<br><span>Display</span></p>
+          </div>
+          <div class="flowchart__arrow">→</div>
+          <div class="flowchart__step">
+            <div class="flowchart__icon">✅</div>
+            <p class="flowchart__label">Order & Payment<br><span>Send to Kitchen</span></p>
+          </div>
+        </div>
+
+        <div class="flowchart__backend">
+          <span class="flowchart__backend-tag">Back-End Logic</span>
+          <div class="flowchart__backend-row">
+            <div class="flowchart__backend-box">
+              <span class="flowchart__backend-icon">☁️</span>
+              <strong>Check Member API</strong>
+              <span>Fetch profile &amp; tier</span>
+            </div>
+            <div class="flowchart__backend-box">
+              <span class="flowchart__backend-icon">📋</span>
+              <strong>Conditional Prompt Logic</strong>
+              <span>Require table no. / order type</span>
+            </div>
+            <div class="flowchart__backend-box">
+              <span class="flowchart__backend-icon">📢</span>
+              <strong>Promo Engine</strong>
+              <span>Auto-apply matching rule</span>
+            </div>
+            <div class="flowchart__backend-box">
+              <span class="flowchart__backend-icon">🎁</span>
+              <strong>Bundle Rule</strong>
+              <span>Buy A+B+C → free item D</span>
+            </div>
+            <div class="flowchart__backend-box">
+              <span class="flowchart__backend-icon">🏷️</span>
+              <strong>Tiered Rule</strong>
+              <span>Set quantity → auto tier discount</span>
+            </div>
+            <div class="flowchart__backend-box">
+              <span class="flowchart__backend-icon">👥</span>
+              <strong>Member-Exclusive</strong>
+              <span>Offer shown only for members</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="split-panel">
+        <div class="split-panel__col">
+          <h4 class="flow__title">🎯 Design Decisions</h4>
+          <div class="decisions">
+            <div class="decisions__photo">
+              <img src="images/pictures/erp-kickoff.jpg" alt="Customer viewing QR ordering menu on a mobile phone" loading="lazy">
+            </div>
+            <ul class="decisions__list">
+              <li>Customer identification is prioritized before menu rendering to ensure accurate promotion eligibility.</li>
+              <li>Promotion logic is decoupled from the UI for scalability and easy maintenance.</li>
+              <li>Recommendation engine supports upsell and cross-sell opportunities.</li>
+              <li>Modular architecture supports multi-brand and multi-branch expansion.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="split-panel__col">
+          <h4 class="flow__title">✨ AI &amp; Future Opportunities</h4>
+          <div class="ai-grid">
+            <div class="ai-grid__item">
+              <span class="ai-grid__icon">🎓</span>
+              <p>Personalized<br>Recommendations</p>
+            </div>
+            <div class="ai-grid__item">
+              <span class="ai-grid__icon">📈</span>
+              <p>Demand<br>Forecasting</p>
+            </div>
+            <div class="ai-grid__item">
+              <span class="ai-grid__icon">🏷️</span>
+              <p>Smart<br>Promotions</p>
+            </div>
+            <div class="ai-grid__item">
+              <span class="ai-grid__icon">👥</span>
+              <p>Customer<br>Segmentation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <blockquote class="exec-insight">
+        <p>"My focus was not only on interface design, but on aligning business rules, customer experience, and scalable system architecture."</p>
+        <div class="exec-insight__equation">
+          <span class="exec-insight__chip">👥 People</span><span class="exec-insight__op">+</span><span class="exec-insight__chip">⚙️ Process</span><span class="exec-insight__op">+</span><span class="exec-insight__chip">💻 Technology</span><span class="exec-insight__op">=</span><span class="exec-insight__result">💎 Business Value</span>
+        </div>
+      </blockquote>
 
       <p class="diagrams__note">All screens, labels, and rules above are illustrative recreations for portfolio purposes — not reproductions of any employer's actual interface, data, or business logic.</p>
     </div>
