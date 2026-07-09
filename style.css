@@ -886,10 +886,12 @@ h1, h2, h3 { font-family: var(--serif); margin: 0; font-weight: 600; }
 }
 .split-panel {
   display: block;
-  margin-top: 44px;
+  margin-top: 20px;
+  width: 100%;
 }
 .split-panel__col {
-  width: 100%;
+  width: 100% !important;
+  max-width: none !important;
 }
 .ai-grid {
   display: grid;
@@ -915,9 +917,9 @@ h1, h2, h3 { font-family: var(--serif); margin: 0; font-weight: 600; }
 }
 /* Design Decisions image (replaces text block) */
 .design-decisions-img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
   height: auto;
   border-radius: 8px;
 }
