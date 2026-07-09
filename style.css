@@ -540,8 +540,18 @@ h1, h2, h3 { font-family: var(--serif); margin: 0; font-weight: 600; }
   padding: 9px 0;
   border-top: 1px solid var(--line);
 }
-.case__media--secondary { margin-top: 18px; min-height: 200px; }
-.case__media--secondary img { min-height: 200px; }
+.case__media--secondary {
+  margin-top: 18px;
+  min-height: 0;
+  background: none;
+}
+.case__media--secondary img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  min-height: 0;
+  aspect-ratio: auto;
+}
 
 @media (max-width: 760px) {
   .case, .case--reverse { grid-template-columns: 1fr; direction: ltr; }
